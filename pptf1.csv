@@ -1,0 +1,319 @@
+Plant,Complaint Date,Issue ID,Issue Type,Issue Description,Acceptance,Product group,Material,Material [Name],Customer [Name],Failure Loc. (Code Group) Name,Failure Loc. (Code) Name,Failure Type (Code Group) Name,Failure Type (Code) Name,Customer problem decription,Internal problem description,Containment Action,Internal Activity Description,Cause for Occurence,Cause for Non-detection,Corrective Action,Preventive Action
+NVJ,2023-04-02 00:00:00,1000323170,QP01,Formaggio_cheese_less_fat,Accepted,Milk Products Group,Z52368-705,Door drive HECKK-L_-TMTMA-D,Savor Sphere,Milk Product - Formaggio Cheese,Milk Standardization,Process Failure,Fat Content Less,Wrong fat content,Fat content is less than specification,Segragte NG batches from available stock,Laboratory testing during incoming sampling inspection for fat % confirmation,"Calibration error leads to inaccurate measurement of fat content
+
+Insufficient calibration frequency",No manual inspection available,"Instrument repaired & re-calibrated
+
+Revise the frequncy of calibration from 1/month to 1/week
+
+Cross-verification of tested sample started on sampling basis
+
+Control plan, PM checksheet & FMEA updated",Action taken on all lines for all instruments
+NOU,2021-01-11 00:00:00,1000891047,QP03,Inprocess_curd_formation_not_consistent,Accepted,Milk Products Group,Z52884-708,,Gourmet Groves,Milk Product - Cheddar Cheese,Inoculation,Process Failure,Improper Curding,Curd is not formed properly,Curd consitency is not good,Visual inspection of available batches & 100% texture confirmation before proceeding to next stage,"Inspection of NG batches & texture analysis as per standard process sheet
+
+Production data verification
+
+Machine maintenance data verification","Temperature fluctuation in curding chamber due to faulty heating panel
+
+No alarm or trigger mechanism for parameter out of specifrication
+",Real time monitoring not available for chamber temperature,"Faulty heating panel replaced
+
+Thermostat with automatic alarm system installed
+
+Real time monitoring of process parameters implemented for chamber
+
+Control plan, FMEA updated",Deployment of action of all chambers
+CVQ,2022-11-10 00:00:00,1000244866,QP03,Extra_salty_cheese,Accepted,Milk Products Group,Z52310-750,,Final Inspection Stage,Milk Product - Brie Cheese,Salting,Taste Failure,Uneven Salting,Excess Salt content detected during regular sampling inspection,Salt content not as per specification,"Production stop at Salting process, proccessed batch is blocked & rejected
+
+Chamber cleaned before processing of next batch","Production data verification
+
+Salt content analysis & comparison with process control sheet
+","Salt distribution is improper due to nozzle malfunction
+
+Nozzle inspection checkpoint not available in daily machine checksheet",Could not be detected due to automatic process without any manual check,"Salt distribution nozzle replacement
+
+Nozzle inspection checkpoint added in daily machine checksheet
+
+Nozzle pressure meter installed & connected to PLC, if nozzle malfucntion then alarm rings
+
+Control plan, Work instructions updated",Control plan updated & checkpoint horizontally deplyed in all machines on shopfloor
+LYX,2023-10-08 00:00:00,1000635494,QP02,Low_shelf_life_cheese,Accepted,Milk Products Group,Z52420-705,,Epicure Harvest,Milk Product - Blue Cheese,Inoculation,Process Failure,Contaminated Starter Culture,Cheese goes bad when packet opens,Cheese expired before shelf life,"Batch details collected & sampling inspection done from all batches to confirm shelf life
+
+NG shelf life batches blocked & rejected","Production data verification
+
+Microbial analysis of NG batch
+
+Containment analysis
+","Due to poor handling, leads to cross contamination 
+
+Culture handling process not followed","Microbial testing not done on final product, only performed on RM batches","Sanitation protocol strengthen with addition of contamination removal chamber
+
+Training of operators on new contamination removal chamber & culture handling process revised
+
+Microbial testing added for final product & control plan updated",Deployment of contamination chamber in all production shop floors
+ZNE,2022-01-09 00:00:00,1000179357,QP01,Flavour_not_good,Accepted,Milk Products Group,Z52375-710,,Savor Sphere,Milk Product - Cheddar Cheese,Curing,Texture Failure,Improper Ageing,Cheese flavor is not good,Cheese flavor is different than regular flavor,"Get the details of NG batch & segregate the complete NG batch
+
+Cross verification of other available batches based on sampling","Production data verification
+
+Ageing chamber verification
+
+Environmental controls verification","During the change of product, process parameters were not adjusted by operator
+
+Manual updation of process parameter",lack of judgment by new operator,"Production parameter control panel implemented, operator can choose product variant, rest process parameter will be automatically selected (manual process removed)
+
+Re-training of operators
+
+Control plan & FMEA updated",Implemented on all machines
+KLA,2022-12-07 00:00:00,1000505184,QP02,Protein_content_out_of_specification,Accepted,Milk Products Group,Z62107-615,,Culinary Eclipse,Milk Product - Skimmed Milk,Standardization,Process Failure,Improper Standardization,Protein content of milk is not meeting specification,Protein content is out of specification,Segragte NG batches from available stock,"Production data verification
+
+Protein content analysis by laboratory testing","Ultra high  temperature processing of milk is done on low temperature as thermostat did not achieve required temperatur due to thermostat malfunction 
+
+Thermostat malfunction due to damaged electrical wires","Protein analysis test happens only at beginning of shift
+
+","Thermostat malfunction corrected by wire replacement
+
+Checkpoint for wire panel check added in maintenace PM checksheet
+
+Protein analysis frequenc updated to 2/shift (beginning & end of shift)
+
+Control plan & work instructions updated",Wire panel checkpoint added in maintenace checkpoint of all machines in the plant
+EQL,2023-08-04 00:00:00,1000013699,QP01,Wrong milk supplied,Accepted,Milk Products Group,Z62240-625,,Fusion Palate,Milk Product - Whole Milk,Packaging,Packaging Issue,Wrong packaging,Wrong milk supplied,Skimmed milk supplied in whole milk,"Segregation of all stock by visual inspection
+
+Replacement of NG stock","Packaging details checked for NG batch
+
+Stock matching to evalute mixing in other variants","During shift changover mixing happened
+
+Inadequate changeover process",Inspector confirmed only big carton box lable outside of box because there is no checkpoint of inside box label checking,"Re-training of the operators
+
+Changeover procedure updated to include checkpoint for stock confirmation before start of shift
+
+QR code scanner implented at packing station to scan the inside boxes label as well carton label to avoid mixup",Implementation of QR code scanner at all packing station
+RPP,2023-06-30 00:00:00,1000460305,QP03,Contaminated milk,Accepted,Milk Products Group,Z62405-620,,Flavour Fiesta,Milk Product - Whole Milk,Clarification & sepration,Process Failure,Inadequate sepration,Foreign material found in milk,Contamination observed in milk,Visual inspection of available batches in process,"Production data verification
+
+Sepration efficiency analysis of contaminated batch
+","Incomplete removal of impurities as machine shutdown during powercut due to which processing could not be finished
+
+PLG logic of machine is faulty which leads to display of cycle completion after powercut","Automatic process, no manual checks available","Machines are connected to invertor back-up power supply
+
+PLC logic of machine changed to prevent inadequate completion of cycle
+
+Manual check added for contamination check after each batch processing
+
+Control plan & FMEA updated",PLC logic of all machines updated & connected to invertor based power supply
+DBF,2022-06-09 00:00:00,1000585976,QP02,Damaged milk supply,Accepted,Milk Products Group,Z62315-630,,Gourmet Groves,Milk Product - double skimmed Milk,Packaging,Packaging Issue,Damaged Packaging,Milk cartons received in damaged condition,Milk cartons damaged,100% visual inspection of available stock,"Packaging work flow review
+
+packaging standard specifications reviewed
+
+Force test to indetify the load resistance of carton","Cartons damaged as there was no pallet securing available
+
+It was not consider during the initial development","Packing was OK at time of dispatch
+","Pallet securing strip added in packaging
+
+PSS updated to capture the change
+
+Checkpoint added in packaging verification sheet at dispatch area",Pallet securing strips added in other products as well
+FOO,2022-03-10 00:00:00,1000715549,QP02,Nutritional value not as per standard,Accepted,Milk Products Group,Z62110-645,,Culinary Eclipse,Milk Product - Skimmed Milk,Standardization,Process Failure,Inadequate Nutrition Value,Nutritional content not as per specifications,Nutritional content not as per specifications,"Get the details of NG batch & segregate the complete NG batch
+
+Cross verification of other available batches based on sampling",Laboratory testing for nutritional value confirmation,"Inadequate mixing of fat cream into skimmed milk due to wrong value displayed by weighing scale
+
+Load cell malfunction due to damage due to overloading",No check available at Standardization process,"Weighing scale load cell replaced
+
+Safety maximum weight loading limit defined & equipment checksheet updated
+
+Nutritional value measurement check implemented at standardization process",Safety max weight limit definded for all weighing scales
+YCS,2022-05-29 00:00:00,1000394079,QP01,Water in yogurt,Accepted,Milk Products Group,Z72300-505,,Savor Sphere,Milk Product - Greek Yogurt,Fermentation,Process Failure,Inadequate Storage space,Watery yogurt,Yogurt left water,Segregation of all stock by visual inspection,"Production data verification
+
+Whey analysis from NG batch,
+
+Verification of acidification parameters during fermentation ","Over acidification of yogurt during fermentation process leads to watery yogurt because of delay in transfer of fermented yogurt to cold storage due to limted space in cold storage
+
+Storage capacity assessment not done based on production needs",Could not be detected as sepration of whey in form of water from yogurt is a time taking process,"Cold storage space optimization
+
+Additional alternative space is created to avoid storage delays
+
+Storage capacity re-assessment based on current production needs",Capacity assessment doen for other stages of production stages
+TMZ,2021-12-24 00:00:00,1000678418,QP01,Yogurt texture not good,Accepted,Milk Products Group,Z72355-570,,Gourmet Groves,Milk Product - Flavoured Yogurt,Emulsion,Raw material issue,Inadequate quality of Raw Milk,Non uniform texture of yogurt,Non uniform texture of yogurt,100% visual inspection of available stock,Detailed laboatory testing of NG sample,"The quality of Raw milk used in production was low leading to emulsion/texture issue in yogurt
+
+Inadequate hygeinic conditions at mil collection points",No control of farm related contamination at Milk plant,"Hygeinic conditions improved by enhancing the milking environment
+
+Standard operating procedure made for cleaning before milking at farm level
+
+Incoming inspection started for detection of milk contamination at receiving level",Same practices deployed at other milk vendors as well
+OAU,2022-02-03 00:00:00,1000834645,QP03,Mixup,Accepted,Milk Products Group,Z72410-520,,Fusion Palate,Milk Product - Full fat Yogurt,Packaging,Packaging Issue,Mixing,Fruit yogurt found mixed in normal yogurt,Mixing of two variants of yogurt,100% visual inspection of available stock,Analysis of process flow of material to understand the mixing possibilities,"Incomplete flushing of line during variant changeover
+
+Inadequate changeover procedure",inspector did not detect different variant due to negligence,"Changeover procedure modified for complete flushing of variant before changeover to new variant
+
+Re-training of inspectors",Changeover procedure is deployed to other product lines as well
+TKI,2022-06-17 00:00:00,1000815895,QP01,Expired yogurt received,Accepted,Milk Products Group,Z72335-555,,Gourmet Groves,Milk Product - Greek Yogurt,Storage,Matrial handling,Indequate material handling,Expired yogurt received in fresh batch,Expired yogurt received in fresh batch,Segregation of existing stock to identify the NG batch,"Production data verification
+
+Stock validation
+
+Tracing the NG batch details","NG batch got mixed up with OK batch due to improper handling of NG batches
+
+Procedure for material handling & storage of NG parts is weak ",No identification tag was available on NG batch,"Material handling procedure strenghtened
+
+NG material storage area seprately identified
+
+NG tags prepared for displaying on NG material
+
+re-training of operators on material handling procedures",Similar actions deployed at other production units as well
+OQG,2022-05-07 00:00:00,1000720668,QP02,Bad smell in yogurt,Accepted,Milk Products Group,Z72360-540,,Flavour Fiesta,Milk Product - Flavoured Yogurt,Cleaning,Contamination issue,Improper cleaning,Smelling yogurt,Spoilage of yogurt leads to foul oder,identification & isolation of affected batches,"Production data verification
+
+verification of cleaning procedure
+
+Microbial testing","Due to cross-contamination by transfer of micro-organisms from one batch to another batch affecting the aroma of subsequent batches
+
+Inadequate manual equipment cleaning",Microbial growth occured post quality inspection,"Manual equipment cleaning replaced with Automated cleaning for standardiyation  efficient cleaning
+
+Equipment cleaning procedure modified
+
+Cleaning verification frequncy defined after each automated cleaning.",Automated cleaning implemented on machines & mixing/processing chambers
+ZYS,2021-06-26 00:00:00,1000784552,QP01,Color variation,Accepted,Milk Products Group,Z82150-430,,Fusion Palate,Milk Product - Herb Butter,Processing,RM mixing issue,RM Mixing,Uneven color of butter,Uneven color of butter (uneven yellowing),"Identification of NG batch
+
+100% visual inspection for available stock","Production data verification
+
+Mixing records verified
+
+Process records verified
+
+Laboratory testing of NG sample","Due to the varition in cream composition as cream from two different suppliers used in single batch
+
+Inadequate mixing procedure",The color difference could not be detected by operator due to lack of sufficient light level at inspection station,"Mixing combinations identified based on trials & results
+
+Mixing procedure revised by identifying the various combination for production to eliminate color variation
+
+Lux level increase at inspection station",the actions are implemented across all production units
+TZQ,2022-03-25 00:00:00,1000166769,QP03,Water residue in butter,Accepted,Milk Products Group,Z82111-410,,Gourmet Groves,Milk Product - Salted Butter,Moisture,Process Failure,Inadequate washing,Higher moisture content,Higher moisture content,"All samples of NG batch collected & contained
+
+Random testing of samples from other batches as well","Moisture content testing of NG batch
+
+Production & maintenance records verification","Incomplete washing due to insufficient water useage which leads to buttermilk residue remain in butter leading to high moisture content
+
+Water nozzle blocked leads to insufficient water usage
+
+Ineffective preventive management of nozzle",Non-standardized testing method for checking moisture content,"Nozzle blockage cleared in butter cleaning machine
+
+PM checksheet updated with checkpoint for through inspection of water nozzle
+
+Standardized mothod adopted for moisture testing
+
+Fmea & control plan updated",Similar actions deployed at other production lines as well
+HAW,2023-07-20 00:00:00,1000577656,QP01,Wrong butter received,Accepted,Milk Products Group,Z82183-495,,Gourmet Groves,Milk Product - Unsalted Butter,Packaging,Packaging Issue,Wrong labelling,Unsalted butter labelled as salted butter,Wrong label of unsalted butter,"100% visual inspection
+
+NG batch contained & rejected","Packaging review
+
+Batch records review
+
+Operator internviews
+","Incorrect labelling during production due to maunal labelling process
+
+No automatic control of labelling",Labelling & inspection performed by same operator who have overlooked incorrect label,"Automatic labelling machines implemented on production line
+
+Operator now dedicated for only inspection of the label, so he can focus better.
+
+Operator re-training
+
+Labelling work instructions & Control plan updated",Automatic labelling implemented in other products & variants
+UAL,2023-11-30 00:00:00,1000983819,QP02,Salt tast variation in butter,Accepted,Milk Products Group,Z82100-460,,Savor Sphere,Milk Product - Salted Butter,Processing,RM mixing issue,RM Mixing,"Variation in salt flavor in butter (some more salted, some are less salted)",Inconsistent salt flavor,"NG batch identification & containment of all packets from the batch
+
+Sampling verification of other batches also","Customer feedback on problem
+
+Sensory evaluation of product from various batches
+
+Laboratory testing for ingredient inspection
+
+Batch records verification","Inconsistent mixing leads to uneven distribution of salt due to variation in blending speed
+
+Blender motor malfuctioned due to moisture content
+
+Inadeqaute moisture control measures",No inspection checkpoint available after blending as its a continuous process,"Blending motor replaced
+
+Moisture control guard implemented to prevent moisture from entering into motor
+
+Sampling inspection added after blending stage for salt  content verification",Moisture control guard implemented in other machines as well
+ZZQ,2022-08-21 00:00:00,1000709738,QP03,Smell in butter,Accepted,Milk Products Group,Z82175-480,,Fusion Palate,Milk Product - Butter spread,Processing,Process Failure,Inadequate odor,Foul odor in butter,Foul odor in butter,Batch traceability & suspected batch isolation,"Microbial testing
+
+Fatty acids analysis
+
+Porduction records review","Foul odor due to microbial contamination due to the poor air quality
+
+Air quality is poor because of the blocked air filter",No contamination test to detect microbial contamination,"Equipment sanitization & Air filter replacement
+
+Air filter replacement frequency redcued from once/month to once/15 days
+
+Contamination test implemented once/day at processing chamber
+
+Maintenance checksheet, Control plan & FMEA updated",Lessons learned shared to other production plants
+ONS,2023-02-10 00:00:00,1000578948,QP02,Ice cream looks grained,Accepted,Milk Products Group,Z92480-385,,Gourmet Groves,Milk product - Vanilla Ice cream,Processing,Texture Failure,Wrong texture,Texture issue,Graininess of ice cream,"Hold the NG batch & seprately identify to avoid mixup
+
+Inform production about issue","Production records verification
+
+Microscopic analysis
+
+Process parameter review
+
+Ingrediant interaction test","Improper control of ice crystal formation during freezing leads to uneven ice crystals making leading to graininess texture
+
+Improper ice crystal formation due to Slow freezing rate because of Cooling gas leakage from chamber
+
+No protective foiling of cooling gas pipes
+",Visual inspection difficult as crystals are small & could not be detected through naked eyes,"Cooling gas pipes replaced
+
+Protective foiling done for pipes
+
+Magnifying glass implemented at visual station for better detection of small crystals
+
+PM checksheet, Work instructions, control plan & FMEA updated",Foiling of other cooling pipes completed
+DHR,2021-03-14 00:00:00,1000433177,QP01,Vanilla ice cream color variation,Accepted,Milk Products Group,Z92425-310,,Flavour Fiesta,Milk product -  Butterscotch Ice cream,Processing,Visual Appreance Failure,Color variation,Color irregularities,Abnormal color in vanilla ice cream,"100% visual inspection of affected batches
+
+Faulty quanty replacement at customer end","Ingrediants source verification
+
+Process record validation
+
+Color profile testing to understand the pigment behaviour","Useage of aged color leads to variation in ice cream color
+
+Aged color was stored at warehouse for long time due to lack of FIFO system ",Error by visual inspector due to lack color variation specific training,"Complete RM stock reverification & aged RM scrapped
+
+FIFO system implemented with color coding for material received in specific month to ensure the easy identification & better consumption
+
+Re-training of operator on color varitaion
+Color shades displayed at work station for reference purpose
+
+Control plan, Material handling work instructions & FMEA updated",Lessons learned shared to other production plants
+TAS,2023-01-22 00:00:00,1000802284,QP03,Strange taste,Accepted,Milk Products Group,Z92440-335,,Gourmet Groves,Milk product - Vanilla Fruits Ice cream,Storage,Taste Failure,Taste change,Frozen storage Flavor absorption,Altered taste of ice cream due to absorption of cold storage flavours,All quantity from affected batch to be recalled & scrapped,"Storage conditions review
+
+Production records verification
+
+Packaging material inspection","The material use for packing have poor sealing capabilities & weak barrier properties 
+
+Inadequate packaging material selection during product development","Absorption of storage flavour can not have immediate impact on flavor, it develops over period of time thus difficult to detect","Packing material changed to material with stronger sealing & barrier properties
+
+Packaging validation testing added in product development checklist
+
+PSS, control plan & FMEA updated",Packaging of other variants also reviewed & updated accordingly
+MPA,2022-05-18 00:00:00,1000591258,QP02,Leakage from carton box,Accepted,Milk Products Group,Z92450-320,,Savor Sphere,Milk product - Chocolate Ice cream,Packaging,Packaging Issue,Leakage,Spillage of ice-cream,Leakage of ice cream from package,"Visual inspection for damaged items in the shipment
+
+Temporary reduction in stacking height to prevent instability","Packaging condition review
+
+Logistics condition review
+","Leakage due to transportation damage as ice cream cartons fell down
+
+Improper stacking & overloading of cartons lead to instability 
+
+Maximum safety height not defined in PSS",No leakage/damage at time of inspection,"Stacking maximum height defined in PSS
+
+Loading & stacing work instructions updated
+
+Training given to stacking operator",Horizontally deployed forall the products
+FOY,2022-01-28 00:00:00,1000680685,QP01,Too sweet flavour,Accepted,Milk Products Group,Z92410-305,,Fusion Palate,Milk product - Mango Ice cream,Mixing,Taste Failure,Taste change,Excessive sugar taste in Ice-cream,Excessive sugar taste in Ice-cream,Affected batch put on hold & quantity at customer replaced with new batches,"Production records verification
+
+Laboratory testing for content analysis
+
+Process records validation","Incomplete dissolution lead to excessive sugar taste
+
+Improper order of ingredients mixing affected the dissolution kinectics of the sugar",Sampling variation leads to excessive sugar undetected as sampling does not represent the entrire batch,"Ingredients order sequence defined & documented
+
+Training provided to mixing operator on new mixing order
+
+Sampling qunatity doubled to cover increased coverage of batch
+
+Process sheet, control plan & FMEA updated",Actions applied to other ice-cream variants
