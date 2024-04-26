@@ -1,4 +1,14 @@
 __pycache__/
-myenv/
+
 urdu_data/
 zzz.ipynb
+s3/
+s2/
+s1_2/
+s1/
+final_arguments/
+alignments/
+config.py
+haarcascade_frontalface_default.xml
+jit_gpu_used.ipynb
+model.pkl
